@@ -1,0 +1,6 @@
+2026-09-29T20:17:09.291306781Z stderr F time=2026-09-29T20:17:09.291Z level=INFO msg="Starting Workflow Executor" version=v4.1.4 argo=true buildDate=2026-09-18T09:31:26Z gitCommit=b5b4d665e9be9b87c115f943584c3e0ae96fe073 gitTag=v4.1.4 gitTreeState=clean goVersion=go1.26.5
+2026-09-29T20:17:09.293987791Z stderr F time=2026-09-29T20:17:09.292Z level=INFO msg="Using executor retry strategy" argo=true Steps=5 Duration=1s Factor=1.6 Jitter=0.5
+2026-09-29T20:17:09.293995389Z stderr F time=2026-09-29T20:17:09.293Z level=INFO msg="Executor initialized" buildDate=2026-09-18T09:31:26Z namespace=argo gitCommit=b5b4d665e9be9b87c115f943584c3e0ae96fe073 gitTreeState=clean podName=experiment-gnxvr gitTag=v4.1.4 templateName=demo argo=true version=v4.1.4 deadline=0001-01-01T00:00:00.000Z includeScriptOutput=false goVersion=go1.26.5
+2026-09-29T20:17:09.347428383Z stderr F time=2026-09-29T20:17:09.347Z level=INFO msg="Loading script source" argo=true path=/argo/staging/script
+2026-09-29T20:17:09.347437804Z stderr F time=2026-09-29T20:17:09.347Z level=INFO msg="Start loading input artifacts..." pluginName="" argo=true
+2026-09-29T20:17:09.347443612Z stderr F time="2026-09-29T20:17:09.347Z" level=info msg="Alloc=7322 TotalAlloc=16131 Sys=23158 NumGC=5 Goroutines=3"

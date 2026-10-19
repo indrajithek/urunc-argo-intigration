@@ -1,0 +1,4 @@
+CONTAINER           IMAGE               CREATED             STATE               NAME                      ATTEMPT             POD ID              POD                                        NAMESPACE
+422179f45b2fb       1894ffffbb742       45 seconds ago      Exited              main                      0                   1135914c52093       experiment-gnxvr                           argo
+e2ba6b8df60f5       fdda743445e0c       46 seconds ago      Running             wait                      0                   1135914c52093       experiment-gnxvr                           argo
+87c6051baaad0       fdda743445e0c       53 seconds ago      Exited              init                      0                   1135914c52093       experiment-gnxvr                           argo

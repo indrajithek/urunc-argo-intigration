@@ -1,0 +1,12 @@
+2babc5f28c8ea13d1e5058e54ddb6254fc3dded77880ad8b63ef7c98e1bf680b  urunc_static_amd64
+2f204c813a0b25593a81ebf34b0d99229763ca3a3c4c49d9b9aabfb7cb85f9a0  containerd-shim-urunc-v2_static_amd64
+urunc version 0.8.0-27f3d06
+3885a64a00b1f7ba2a492af1c9613be0273eb54716380e9a1102678e45b55695  release-amd64-FC-v1.7.0_CLH-v50.0_S5-v0.9.3_VFS_-v1.13.0_QM-v10.1.1-9a44e.tar.gz
+cloud-hypervisor
+firecracker
+qemu-system-x86_64
+solo5-hvt
+solo5-spt
+virtiofsd
+QEMU emulator version 10.1.1 (v10.1.1)
+virtiofsd 1.13.0

@@ -1,0 +1,16 @@
+LAST SEEN   TYPE      REASON                OBJECT                                      MESSAGE
+3m55s       Normal    WorkflowRunning       workflow/experiment-gnxvr                   Workflow Running
+3m54s       Normal    Scheduled             pod/experiment-gnxvr                        Successfully assigned argo/experiment-gnxvr to systems-research
+3m53s       Normal    Pulling               pod/experiment-gnxvr                        Pulling image "quay.io/argoproj/argoexec:v4.1.4"
+3m33s       Normal    Pulled                pod/experiment-gnxvr                        Successfully pulled image "quay.io/argoproj/argoexec:v4.1.4" in 19.912s (19.912s including waiting). Image size: 70157910 bytes.
+3m32s       Normal    Created               pod/experiment-gnxvr                        Container created
+3m32s       Normal    Started               pod/experiment-gnxvr                        Container started
+3m25s       Normal    Created               pod/experiment-gnxvr                        Container created
+3m25s       Normal    Pulled                pod/experiment-gnxvr                        Container image "docker.io/urunc-argo/python-linux-qemu:135" already present on machine and can be accessed by the pod
+3m25s       Normal    Started               pod/experiment-gnxvr                        Container started
+3m25s       Normal    Pulled                pod/experiment-gnxvr                        Container image "quay.io/argoproj/argoexec:v4.1.4" already present on machine and can be accessed by the pod
+3m24s       Normal    Started               pod/experiment-gnxvr                        Container started
+3m24s       Normal    Created               pod/experiment-gnxvr                        Container created
+3m20s       Normal    WorkflowNodeRunning   workflow/experiment-gnxvr                   Running node experiment-gnxvr
+45s         Warning   WorkflowNodeError     workflow/experiment-gnxvr                   Error node experiment-gnxvr: wait: Error (exit code 64): Patch "https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr": dial tcp 10.96.0.1:443: connect: no route to host
+35s         Warning   WorkflowFailed        workflow/experiment-gnxvr                   wait: Error (exit code 64): Patch "https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr": dial tcp 10.96.0.1:443: connect: no route to host

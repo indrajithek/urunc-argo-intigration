@@ -1,0 +1,22 @@
+apiVersion: v1
+items:
+- apiVersion: argoproj.io/v1alpha1
+  kind: WorkflowTaskResult
+  metadata:
+    creationTimestamp: "2026-09-29T20:17:16Z"
+    generation: 1
+    labels:
+      workflows.argoproj.io/report-outputs-completed: "false"
+      workflows.argoproj.io/workflow: experiment-gnxvr
+    name: experiment-gnxvr
+    namespace: argo
+    ownerReferences:
+    - apiVersion: argoproj.io/v1alpha1
+      kind: Workflow
+      name: experiment-gnxvr
+      uid: 981da788-35e6-41a0-8e97-9329fb308a74
+    resourceVersion: "2197"
+    uid: fa8664c7-ccb8-4d5f-91d2-888341efac3e
+kind: List
+metadata:
+  resourceVersion: ""

@@ -1,0 +1,29 @@
+    inet 192.168.122.11/24 brd 192.168.122.255 scope global enp1s0
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 192.168.122.11:6443 --token <redacted> \
+	--discovery-token-ca-cert-hash sha256:<redacted> 
+node/systems-research untainted
+namespace/kube-flannel created
+serviceaccount/flannel created
+clusterrole.rbac.authorization.k8s.io/flannel created
+clusterrolebinding.rbac.authorization.k8s.io/flannel created
+configmap/kube-flannel-cfg created
+daemonset.apps/kube-flannel-ds created
+Waiting for daemon set spec update to be observed...
+Waiting for daemon set "kube-flannel-ds" rollout to finish: 0 of 1 updated pods are available...
+daemon set "kube-flannel-ds" successfully rolled out
+node/systems-research condition met
+NAME               STATUS   ROLES           AGE   VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION              CONTAINER-RUNTIME
+systems-research   Ready    control-plane   73s   v1.37.0   192.168.122.11   <none>        Ubuntu 24.04.4 LTS   6.8.0-142-generic (amd64)   containerd://2.4.0

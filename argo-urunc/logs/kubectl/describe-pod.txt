@@ -1,0 +1,178 @@
+Name:                experiment-gnxvr
+Namespace:           argo
+Priority:            0
+Runtime Class Name:  urunc
+Service Account:     default
+Node:                systems-research/192.168.122.11
+Start Time:          Tue, 29 Sep 2026 20:16:47 +0000
+Labels:              workflows.argoproj.io/completed=true
+                     workflows.argoproj.io/workflow=experiment-gnxvr
+Annotations:         kubectl.kubernetes.io/default-container: main
+                     workflows.argoproj.io/node-id: experiment-gnxvr
+                     workflows.argoproj.io/node-name: experiment-gnxvr
+                     workflows.argoproj.io/span-id: a557f9ccb9d312b5
+                     workflows.argoproj.io/trace-id: f1080b2f2bd415af9faf51f6d2025af9
+Status:              Failed
+IP:                  
+IPs:                 <none>
+Controlled By:       Workflow/experiment-gnxvr
+Init Containers:
+  init:
+    Container ID:  containerd://87c6051baaad0408cfd1bda6ed4a2d8631e14d819949328283c631998283a865
+    Image:         quay.io/argoproj/argoexec:v4.1.4
+    Image ID:      quay.io/argoproj/argoexec@sha256:ec2a867c2db200d33acda0e9141898070266c1f678bb995bd08cea68ace89c40
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      argoexec
+      init
+      --loglevel
+      info
+      --log-format
+      text
+      --gloglevel
+      0
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 29 Sep 2026 20:17:09 +0000
+      Finished:     Tue, 29 Sep 2026 20:17:09 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      ARGO_POD_NAME:                      experiment-gnxvr (v1:metadata.name)
+      ARGO_POD_UID:                        (v1:metadata.uid)
+      ARGO_WORKFLOW_NAME:                 experiment-gnxvr
+      ARGO_WORKFLOW_UID:                  981da788-35e6-41a0-8e97-9329fb308a74
+      ARGO_CONTAINER_NAME:                init
+      ARGO_TEMPLATE:                      {"name":"demo","inputs":{},"outputs":{},"metadata":{},"script":{"name":"","image":"docker.io/urunc-argo/python-linux-qemu:135","command":["python"],"resources":{},"imagePullPolicy":"Never","source":"import sys, time\nprint(\"EXPERIMENT-BEGIN\", file=sys.stderr, flush=True)\ntime.sleep(300)\nprint(\"42\")\n"}}
+      ARGO_NODE_ID:                       experiment-gnxvr
+      ARGO_INCLUDE_SCRIPT_OUTPUT:         false
+      ARGO_DEADLINE:                      0001-01-01T00:00:00Z
+      ARGO_WORKFLOW_NAME:                 experiment-gnxvr
+      TRACESTATE:                         workflow=argo/experiment-gnxvr
+      TRACEPARENT:                        00-f1080b2f2bd415af9faf51f6d2025af9-a557f9ccb9d312b5-01
+      ARGO_PROGRESS_FILE:                 /var/run/argo/progress
+      ARGO_PROGRESS_PATCH_TICK_DURATION:  1m0s
+      ARGO_PROGRESS_FILE_TICK_DURATION:   3s
+    Mounts:
+      /argo/staging from argo-staging (rw)
+      /var/run/argo from var-run-argo (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j78pb (ro)
+Containers:
+  wait:
+    Container ID:  containerd://e2ba6b8df60f5a9a5eec221eb5cee23470ad3217daec5ae0c5e0e36147ee7a16
+    Image:         quay.io/argoproj/argoexec:v4.1.4
+    Image ID:      quay.io/argoproj/argoexec@sha256:ec2a867c2db200d33acda0e9141898070266c1f678bb995bd08cea68ace89c40
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      argoexec
+      wait
+      --loglevel
+      info
+      --log-format
+      text
+      --gloglevel
+      0
+    State:          Terminated
+      Reason:       Error
+      Message:      Patch "https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr": dial tcp 10.96.0.1:443: connect: no route to host
+      Exit Code:    64
+      Started:      Tue, 29 Sep 2026 20:17:16 +0000
+      Finished:     Tue, 29 Sep 2026 20:19:42 +0000
+    Ready:          False
+    Restart Count:  0
+    Environment:
+      ARGO_POD_NAME:                      experiment-gnxvr (v1:metadata.name)
+      ARGO_POD_UID:                        (v1:metadata.uid)
+      ARGO_WORKFLOW_NAME:                 experiment-gnxvr
+      ARGO_WORKFLOW_UID:                  981da788-35e6-41a0-8e97-9329fb308a74
+      ARGO_ARTIFACT_PLUGIN_NAMES:         
+      ARGO_CONTAINER_NAME:                wait
+      ARGO_NODE_ID:                       experiment-gnxvr
+      ARGO_INCLUDE_SCRIPT_OUTPUT:         false
+      ARGO_DEADLINE:                      0001-01-01T00:00:00Z
+      ARGO_WORKFLOW_NAME:                 experiment-gnxvr
+      TRACESTATE:                         workflow=argo/experiment-gnxvr
+      TRACEPARENT:                        00-f1080b2f2bd415af9faf51f6d2025af9-a557f9ccb9d312b5-01
+      ARGO_PROGRESS_FILE:                 /var/run/argo/progress
+      ARGO_PROGRESS_PATCH_TICK_DURATION:  1m0s
+      ARGO_PROGRESS_FILE_TICK_DURATION:   3s
+    Mounts:
+      /mainctrfs/argo/staging from argo-staging (rw)
+      /tmp from tmp-dir-argo (rw,path="0")
+      /var/run/argo from var-run-argo (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j78pb (ro)
+  main:
+    Container ID:  containerd://422179f45b2fb830957884ac4950ac901c0c6d84d51a5f6039f4c1e581d30f19
+    Image:         docker.io/urunc-argo/python-linux-qemu:135
+    Image ID:      sha256:1894ffffbb742783d2cd3ce590807aecb66a5d84a511719bd9383850e1a22a50
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /var/run/argo/argoexec
+      emissary
+      --loglevel
+      info
+      --log-format
+      text
+      --gloglevel
+      0
+      --
+      python
+    Args:
+      /argo/staging/script
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 29 Sep 2026 20:17:17 +0000
+      Finished:     Tue, 29 Sep 2026 20:17:18 +0000
+    Ready:          False
+    Restart Count:  0
+    Environment:
+      ARGO_CONTAINER_NAME:                main
+      ARGO_NODE_ID:                       experiment-gnxvr
+      ARGO_INCLUDE_SCRIPT_OUTPUT:         false
+      ARGO_DEADLINE:                      0001-01-01T00:00:00Z
+      ARGO_WORKFLOW_NAME:                 experiment-gnxvr
+      TRACESTATE:                         workflow=argo/experiment-gnxvr
+      TRACEPARENT:                        00-f1080b2f2bd415af9faf51f6d2025af9-a557f9ccb9d312b5-01
+      ARGO_PROGRESS_FILE:                 /var/run/argo/progress
+      ARGO_PROGRESS_PATCH_TICK_DURATION:  1m0s
+      ARGO_PROGRESS_FILE_TICK_DURATION:   3s
+    Mounts:
+      /argo/staging from argo-staging (rw)
+      /var/run/argo from var-run-argo (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j78pb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  var-run-argo:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  tmp-dir-argo:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  argo-staging:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-j78pb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

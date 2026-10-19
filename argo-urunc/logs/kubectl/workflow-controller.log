@@ -1,0 +1,101 @@
+time=2026-09-29T20:16:45.477Z level=INFO msg="Processing workflow" resourceVersion=2137 component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=""
+time=2026-09-29T20:16:45.477Z level=INFO msg="trace parent" startMethod=StartWaitClientRateLimiter component=workflow_worker workflow=experiment-gnxvr namespace=argo actualParent=reconcileWorkflow
+time=2026-09-29T20:16:46.985Z level=INFO msg="resolved artifact repository" namespace=argo artifactRepositoryRef=default-artifact-repository component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:16:46.985Z level=INFO msg="Task-result reconciliation" workflow=experiment-gnxvr numObjs=0 namespace=argo component=workflow_worker
+time=2026-09-29T20:16:46.985Z level=INFO msg="updated phase" component=workflow_worker workflow=experiment-gnxvr namespace=argo fromPhase="" toPhase=Running
+time=2026-09-29T20:16:46.985Z level=INFO msg="Node was nil, will be initialized as type Skipped" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:46.986Z level=INFO msg="Event occurred" object.name=experiment-gnxvr object.namespace=argo fieldPath="" kind=Workflow apiVersion=argoproj.io/v1alpha1 type=Normal reason=WorkflowRunning message="Workflow Running" component=workflow_worker
+time=2026-09-29T20:16:46.986Z level=INFO msg="was unable to obtain node, letting display name to be nodeName" workflow=experiment-gnxvr namespace=argo component=workflow_worker boundaryID=""
+time=2026-09-29T20:16:46.986Z level=INFO msg="node initialized" component=workflow_worker workflow=experiment-gnxvr namespace=argo node=experiment-gnxvr phase=Pending message=""
+time=2026-09-29T20:16:46.986Z level=WARN msg="couldn't get boundaryTemplate" component=workflow_worker workflow=experiment-gnxvr namespace=argo nodeName=experiment-gnxvr
+time=2026-09-29T20:16:46.986Z level=INFO msg=getExecutorLogOpts nodeName=experiment-gnxvr loglevel=info component=workflow_worker workflow=experiment-gnxvr namespace=argo nodeID=experiment-gnxvr
+time=2026-09-29T20:16:46.986Z level=INFO msg=getExecutorLogOpts workflow=experiment-gnxvr namespace=argo nodeID=experiment-gnxvr nodeName=experiment-gnxvr loglevel=info component=workflow_worker
+time=2026-09-29T20:16:46.987Z level=INFO msg=getExecutorLogOpts component=workflow_worker workflow=experiment-gnxvr namespace=argo nodeID=experiment-gnxvr nodeName=experiment-gnxvr loglevel=info
+time=2026-09-29T20:16:46.987Z level=INFO msg="trace parent" actualParent=createWorkflowPod namespace=argo nodeName=experiment-gnxvr nodeID=experiment-gnxvr component=workflow_worker podName=experiment-gnxvr workflow=experiment-gnxvr startMethod=StartWaitClientRateLimiter
+time=2026-09-29T20:16:47.339Z level=INFO msg="add pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:16:47.339Z level=INFO msg="Created pod" workflow=experiment-gnxvr namespace=argo nodeName=experiment-gnxvr nodeID=experiment-gnxvr component=workflow_worker podName=experiment-gnxvr
+time=2026-09-29T20:16:47.339Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:47.339Z level=INFO msg=reconcileAgentPod component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:47.339Z level=INFO msg="Workflow to be dehydrated" component=workflow_worker workflow=experiment-gnxvr namespace=argo "Workflow Size"=867
+time=2026-09-29T20:16:47.339Z level=INFO msg="trace parent" component=workflow_worker workflow=experiment-gnxvr namespace=argo startMethod=StartWaitClientRateLimiter actualParent=persistUpdates
+time=2026-09-29T20:16:47.362Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:16:47.388Z level=INFO msg="Workflow update successful" resourceVersion=2145 phase=Running component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:47.461Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:16:48.843Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:16:57.340Z level=INFO msg="Processing workflow" component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=Running resourceVersion=2145
+time=2026-09-29T20:16:57.340Z level=INFO msg="Task-result reconciliation" workflow=experiment-gnxvr namespace=argo numObjs=0 component=workflow_worker
+time=2026-09-29T20:16:57.340Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:57.340Z level=INFO msg=reconcileAgentPod component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:16:57.340Z level=INFO msg="Workflow to be dehydrated" component=workflow_worker workflow=experiment-gnxvr namespace=argo "Workflow Size"=921
+time=2026-09-29T20:16:57.341Z level=INFO msg="trace parent" actualParent=persistUpdates component=workflow_worker workflow=experiment-gnxvr namespace=argo startMethod=StartWaitClientRateLimiter
+time=2026-09-29T20:16:58.566Z level=INFO msg="Workflow update successful" component=workflow_worker workflow=experiment-gnxvr namespace=argo resourceVersion=2165 phase=Running
+time=2026-09-29T20:17:08.568Z level=INFO msg="Processing workflow" phase=Running resourceVersion=2165 component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:08.569Z level=INFO msg="Task-result reconciliation" namespace=argo component=workflow_worker workflow=experiment-gnxvr numObjs=0
+time=2026-09-29T20:17:08.569Z level=INFO msg="TaskSet Reconciliation" namespace=argo component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:08.569Z level=INFO msg=reconcileAgentPod component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:09.641Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:17:16.491Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:17:17.251Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:17:19.642Z level=INFO msg="Processing workflow" phase=Running resourceVersion=2165 component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:19.642Z level=INFO msg="Task-result reconciliation" workflow=experiment-gnxvr namespace=argo numObjs=1 component=workflow_worker
+time=2026-09-29T20:17:19.642Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:19.642Z level=INFO msg=reconcileAgentPod namespace=argo component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:19.642Z level=INFO msg="Workflow to be dehydrated" namespace=argo component=workflow_worker workflow=experiment-gnxvr "Workflow Size"=905
+time=2026-09-29T20:17:19.642Z level=INFO msg="trace parent" component=workflow_worker workflow=experiment-gnxvr namespace=argo actualParent=persistUpdates startMethod=StartWaitClientRateLimiter
+time=2026-09-29T20:17:21.450Z level=INFO msg="Workflow update successful" namespace=argo phase=Running resourceVersion=2205 component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:21.451Z level=INFO msg="Event occurred" kind=Workflow apiVersion=argoproj.io/v1alpha1 type=Normal reason=WorkflowNodeRunning message="Running node experiment-gnxvr" object.name=experiment-gnxvr object.namespace=argo component=workflow_worker fieldPath=""
+time=2026-09-29T20:17:21.582Z level=INFO msg="update pod event" pod=experiment-gnxvr component=pod_controller
+time=2026-09-29T20:17:31.451Z level=INFO msg="Processing workflow" component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=Running resourceVersion=2205
+time=2026-09-29T20:17:31.452Z level=INFO msg="Task-result reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo numObjs=1
+time=2026-09-29T20:17:31.452Z level=INFO msg="queueing pod for cleanup" component=pod_controller action=terminateContainers namespace=argo podName=experiment-gnxvr
+time=2026-09-29T20:17:31.452Z level=INFO msg="TaskSet Reconciliation" namespace=argo component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:31.452Z level=INFO msg=reconcileAgentPod namespace=argo component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:31.452Z level=INFO msg="Workflow to be dehydrated" "Workflow Size"=910 component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:31.452Z level=INFO msg="trace parent" namespace=argo startMethod=StartWaitClientRateLimiter actualParent=persistUpdates component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:31.457Z level=INFO msg="cleaning up pod" action=terminateContainers namespace=argo podName=experiment-gnxvr component=pod_controller key=argo/experiment-gnxvr/terminateContainers
+time=2026-09-29T20:17:31.457Z level=INFO msg="https://10.96.0.1:443/api/v1/namespaces/argo/pods/experiment-gnxvr/exec?command=argoexec&command=kill&command=15&command=1&container=wait&stderr=true&stdout=true&tty=false" namespace=argo podName=experiment-gnxvr component=pod_controller key=argo/experiment-gnxvr/terminateContainers action=terminateContainers
+time=2026-09-29T20:17:31.910Z level=INFO msg="Workflow update successful" workflow=experiment-gnxvr namespace=argo resourceVersion=2223 phase=Running component=workflow_worker
+time=2026-09-29T20:17:31.968Z level=INFO msg="signaled container" component=pod_controller action=terminateContainers namespace=argo podName=experiment-gnxvr pod=experiment-gnxvr stdout=<nil> key=argo/experiment-gnxvr/terminateContainers error="Internal error occurred: error executing command in container: failed to exec in container: failed to start exec \"766b8e4d8a8c7f810b4ed33038f9b987bf31183097cb8a5b021daee11e37f044\": OCI runtime exec failed: urunc did not terminate successfully: exit status 1" container=wait stderr=<nil>
+time=2026-09-29T20:17:31.968Z level=INFO msg="queueing pod for cleanup after" component=pod_controller namespace=argo podName=experiment-gnxvr action=killContainers after=30s
+time=2026-09-29T20:17:41.934Z level=INFO msg="Processing workflow" component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=Running resourceVersion=2223
+time=2026-09-29T20:17:41.934Z level=INFO msg="Task-result reconciliation" namespace=argo numObjs=1 component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:17:41.934Z level=INFO msg="queueing pod for cleanup" component=pod_controller namespace=argo podName=experiment-gnxvr action=terminateContainers
+time=2026-09-29T20:17:41.934Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:17:41.934Z level=INFO msg=reconcileAgentPod workflow=experiment-gnxvr namespace=argo component=workflow_worker
+time=2026-09-29T20:17:41.939Z level=INFO msg="cleaning up pod" podName=experiment-gnxvr key=argo/experiment-gnxvr/terminateContainers component=pod_controller action=terminateContainers namespace=argo
+time=2026-09-29T20:17:41.939Z level=INFO msg="https://10.96.0.1:443/api/v1/namespaces/argo/pods/experiment-gnxvr/exec?command=argoexec&command=kill&command=15&command=1&container=wait&stderr=true&stdout=true&tty=false" action=terminateContainers namespace=argo podName=experiment-gnxvr key=argo/experiment-gnxvr/terminateContainers component=pod_controller
+time=2026-09-29T20:17:42.190Z level=INFO msg="signaled container" pod=experiment-gnxvr component=pod_controller podName=experiment-gnxvr stdout=<nil> stderr=<nil> action=terminateContainers error="Internal error occurred: error executing command in container: failed to exec in container: failed to start exec \"12218903bec41b2d3c75cab8122478deea2f6a22b91529c4f247ade2bd730f32\": OCI runtime exec failed: urunc did not terminate successfully: exit status 1" namespace=argo container=wait key=argo/experiment-gnxvr/terminateContainers
+time=2026-09-29T20:17:42.190Z level=INFO msg="queueing pod for cleanup after" action=killContainers component=pod_controller after=30s namespace=argo podName=experiment-gnxvr
+time=2026-09-29T20:18:01.968Z level=INFO msg="cleaning up pod" component=pod_controller key=argo/experiment-gnxvr/killContainers action=killContainers namespace=argo podName=experiment-gnxvr
+time=2026-09-29T20:18:01.969Z level=INFO msg="https://10.96.0.1:443/api/v1/namespaces/argo/pods/experiment-gnxvr/exec?command=argoexec&command=kill&command=9&command=1&container=wait&stderr=true&stdout=true&tty=false" component=pod_controller key=argo/experiment-gnxvr/killContainers action=killContainers namespace=argo podName=experiment-gnxvr
+time=2026-09-29T20:18:01.985Z level=INFO msg="signaled container" action=killContainers pod=experiment-gnxvr stderr=<nil> podName=experiment-gnxvr container=wait stdout=<nil> component=pod_controller key=argo/experiment-gnxvr/killContainers namespace=argo error="Internal error occurred: error executing command in container: failed to exec in container: failed to start exec \"e08f4b4a680ba276b1ff0354fe34f64856e113cd30c8204e905977ab240b2945\": OCI runtime exec failed: urunc did not terminate successfully: exit status 1"
+time=2026-09-29T20:19:45.988Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:19:48.247Z level=INFO msg="update pod event" component=pod_controller pod=experiment-gnxvr
+time=2026-09-29T20:19:55.988Z level=INFO msg="Processing workflow" namespace=argo phase=Running resourceVersion=2223 component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:19:55.988Z level=INFO msg="Task-result reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo numObjs=1
+time=2026-09-29T20:19:55.988Z level=INFO msg="Pod failed" displayName=experiment-gnxvr component=workflow_worker workflow=experiment-gnxvr namespace=argo templateName=demo pod=experiment-gnxvr message="wait: Error (exit code 64): Patch \"https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr\": dial tcp 10.96.0.1:443: connect: no route to host"
+time=2026-09-29T20:19:55.988Z level=WARN msg="marking its taskResult as completed since aux container did not exit normally" namespace=argo component=workflow_worker workflow=experiment-gnxvr nodeID=experiment-gnxvr container=wait exitCode=64 reason=Error
+time=2026-09-29T20:19:55.989Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:19:55.989Z level=INFO msg=reconcileAgentPod component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:19:55.989Z level=INFO msg="Workflow to be dehydrated" component=workflow_worker workflow=experiment-gnxvr namespace=argo "Workflow Size"=1097
+time=2026-09-29T20:19:55.989Z level=INFO msg="trace parent" component=workflow_worker workflow=experiment-gnxvr namespace=argo startMethod=StartWaitClientRateLimiter actualParent=persistUpdates
+time=2026-09-29T20:19:56.019Z level=INFO msg="Workflow update successful" component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=Running resourceVersion=2430
+time=2026-09-29T20:19:56.020Z level=INFO msg="Event occurred" kind=Workflow apiVersion=argoproj.io/v1alpha1 type=Warning reason=WorkflowNodeError message="Error node experiment-gnxvr: wait: Error (exit code 64): Patch \"https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr\": dial tcp 10.96.0.1:443: connect: no route to host" object.name=experiment-gnxvr object.namespace=argo fieldPath="" component=workflow_worker
+time=2026-09-29T20:20:06.020Z level=INFO msg="Processing workflow" component=workflow_worker workflow=experiment-gnxvr namespace=argo phase=Running resourceVersion=2430
+time=2026-09-29T20:20:06.020Z level=INFO msg="Task-result reconciliation" workflow=experiment-gnxvr namespace=argo numObjs=1 component=workflow_worker
+time=2026-09-29T20:20:06.020Z level=INFO msg="Pod failed" displayName=experiment-gnxvr templateName=demo pod=experiment-gnxvr component=workflow_worker workflow=experiment-gnxvr namespace=argo message="wait: Error (exit code 64): Patch \"https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr\": dial tcp 10.96.0.1:443: connect: no route to host"
+time=2026-09-29T20:20:06.020Z level=WARN msg="marking its taskResult as completed since aux container did not exit normally" namespace=argo component=workflow_worker workflow=experiment-gnxvr exitCode=64 reason=Error nodeID=experiment-gnxvr container=wait
+time=2026-09-29T20:20:06.021Z level=INFO msg="TaskSet Reconciliation" component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:20:06.021Z level=INFO msg=reconcileAgentPod component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:20:06.021Z level=INFO msg="updated phase" workflow=experiment-gnxvr namespace=argo component=workflow_worker fromPhase=Running toPhase=Error
+time=2026-09-29T20:20:06.021Z level=INFO msg="updated message" component=workflow_worker workflow=experiment-gnxvr namespace=argo fromMessage="" toMessage="wait: Error (exit code 64): Patch \"https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr\": dial tcp 10.96.0.1:443: connect: no route to host"
+time=2026-09-29T20:20:06.021Z level=INFO msg="Marking workflow completed" namespace=argo component=workflow_worker workflow=experiment-gnxvr
+time=2026-09-29T20:20:06.021Z level=INFO msg="Event occurred" kind=Workflow apiVersion=argoproj.io/v1alpha1 type=Warning reason=WorkflowFailed message="wait: Error (exit code 64): Patch \"https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr\": dial tcp 10.96.0.1:443: connect: no route to host" object.name=experiment-gnxvr object.namespace=argo component=workflow_worker fieldPath=""
+time=2026-09-29T20:20:06.021Z level=INFO msg="Workflow to be dehydrated" component=workflow_worker workflow=experiment-gnxvr namespace=argo "Workflow Size"=1309
+time=2026-09-29T20:20:06.021Z level=INFO msg="trace parent" namespace=argo component=workflow_worker workflow=experiment-gnxvr startMethod=StartWaitClientRateLimiter actualParent=persistUpdates
+time=2026-09-29T20:20:06.099Z level=INFO msg="Workflow update successful" resourceVersion=2448 phase=Error component=workflow_worker workflow=experiment-gnxvr namespace=argo
+time=2026-09-29T20:20:06.099Z level=INFO msg="trace parent" actualParent=persistUpdates component=workflow_worker workflow=experiment-gnxvr namespace=argo startMethod=StartWaitClientRateLimiter
+time=2026-09-29T20:20:06.111Z level=INFO msg="queueing pod for cleanup" podName=experiment-gnxvr action=labelPodCompleted namespace=argo component=pod_controller
+time=2026-09-29T20:20:06.117Z level=INFO msg="cleaning up pod" namespace=argo podName=experiment-gnxvr component=pod_controller key=argo/experiment-gnxvr/labelPodCompleted action=labelPodCompleted
+time=2026-09-29T20:20:06.117Z level=INFO msg="trace parent" component=pod_controller key=argo/experiment-gnxvr/labelPodCompleted startMethod=StartWaitClientRateLimiter actualParent=startupController action=labelPodCompleted namespace=argo podName=experiment-gnxvr
+time=2026-09-29T20:20:06.144Z level=INFO msg="delete pod event" component=pod_controller pod=experiment-gnxvr

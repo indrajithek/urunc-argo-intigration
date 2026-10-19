@@ -1,0 +1,12 @@
+namespace/argo created
+role.rbac.authorization.k8s.io/executor created
+rolebinding.rbac.authorization.k8s.io/executor-default created
+argo: v4.1.4
+Waiting for deployment "workflow-controller" rollout to finish: 0 of 1 updated replicas are available...
+deployment "workflow-controller" successfully rolled out
+Waiting for deployment "argo-server" rollout to finish: 0 of 1 updated replicas are available...
+deployment "argo-server" successfully rolled out
+NAME                                   READY   STATUS    RESTARTS   AGE   IP           NODE               NOMINATED NODE   READINESS GATES
+argo-server-67b6dff87d-jrh4z           1/1     Running   0          47s   10.244.0.5   systems-research   <none>           <none>
+workflow-controller-66cb9f846d-5qgsn   1/1     Running   0          47s   10.244.0.6   systems-research   <none>           <none>
+quay.io/argoproj/workflow-controller:v4.1.4

@@ -1,0 +1,30 @@
+#9 mkfile /urunc.json
+#9 DONE 1.9s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 9.7s done
+#10 exporting manifest sha256:ea7091f5393395cdc839512f2509b177fdad96b1a4a9ccaa87fa71e0b298a3d3
+#10 exporting manifest sha256:ea7091f5393395cdc839512f2509b177fdad96b1a4a9ccaa87fa71e0b298a3d3 0.2s done
+#10 exporting config sha256:1894ffffbb742783d2cd3ce590807aecb66a5d84a511719bd9383850e1a22a50
+#10 exporting config sha256:1894ffffbb742783d2cd3ce590807aecb66a5d84a511719bd9383850e1a22a50 0.2s done
+#10 naming to docker.io/urunc-argo/python-linux-qemu:135
+#10 naming to docker.io/urunc-argo/python-linux-qemu:135 0.0s done
+#10 unpacking to docker.io/urunc-argo/python-linux-qemu:135
+#10 unpacking to docker.io/urunc-argo/python-linux-qemu:135 1.7s done
+#10 DONE 11.8s
+"sha256:1894ffffbb742783d2cd3ce590807aecb66a5d84a511719bd9383850e1a22a50"
+{
+  "com.urunc.unikernel.binary": "/.boot/kernel",
+  "com.urunc.unikernel.hypervisor": "qemu",
+  "com.urunc.unikernel.mountRootfs": "true",
+  "com.urunc.unikernel.unikernelType": "linux"
+}
+[
+  "/usr/local/bin/python"
+]
+null
+com.urunc.unikernel.binary = /.boot/kernel
+com.urunc.unikernel.hypervisor = qemu
+com.urunc.unikernel.mountRootfs = true
+com.urunc.unikernel.unikernelType = linux

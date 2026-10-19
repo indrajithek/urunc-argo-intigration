@@ -1,0 +1,72 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  annotations:
+    workflows.argoproj.io/pod-name-format: v2
+    workflows.argoproj.io/trace-id: f1080b2f2bd415af9faf51f6d2025af9
+  creationTimestamp: "2026-09-29T20:16:45Z"
+  generateName: experiment-
+  generation: 7
+  labels:
+    workflows.argoproj.io/completed: "true"
+    workflows.argoproj.io/creator: kubernetes-admin
+    workflows.argoproj.io/phase: Error
+  name: experiment-gnxvr
+  namespace: argo
+  resourceVersion: "2448"
+  uid: 981da788-35e6-41a0-8e97-9329fb308a74
+spec:
+  arguments: {}
+  entrypoint: demo
+  podSpecPatch: '{"runtimeClassName":"urunc","enableServiceLinks":false}'
+  templates:
+  - inputs: {}
+    metadata: {}
+    name: demo
+    outputs: {}
+    script:
+      command:
+      - python
+      image: docker.io/urunc-argo/python-linux-qemu:135
+      imagePullPolicy: Never
+      name: ""
+      resources: {}
+      source: |
+        import sys, time
+        print("EXPERIMENT-BEGIN", file=sys.stderr, flush=True)
+        time.sleep(300)
+        print("42")
+status:
+  artifactGCStatus:
+    notSpecified: true
+  artifactRepositoryRef:
+    artifactRepository: {}
+    default: true
+  conditions:
+  - status: "False"
+    type: PodRunning
+  - status: "True"
+    type: Completed
+  finishedAt: "2026-09-29T20:20:06Z"
+  message: 'wait: Error (exit code 64): Patch "https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr":
+    dial tcp 10.96.0.1:443: connect: no route to host'
+  nodes:
+    experiment-gnxvr:
+      displayName: experiment-gnxvr
+      hostNodeName: systems-research
+      id: experiment-gnxvr
+      message: 'wait: Error (exit code 64): Patch "https://10.96.0.1:443/apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/experiment-gnxvr":
+        dial tcp 10.96.0.1:443: connect: no route to host'
+      name: experiment-gnxvr
+      outputs:
+        exitCode: "0"
+      phase: Error
+      progress: 0/1
+      startedAt: "2026-09-29T20:16:46Z"
+      taskResultSynced: true
+      templateName: demo
+      templateScope: local/experiment-gnxvr
+      type: Pod
+  phase: Error
+  progress: 0/1
+  startedAt: "2026-09-29T20:16:46Z"

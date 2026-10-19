@@ -1,0 +1,21 @@
+   kubeadm | 1.37.1-1.1 | https://pkgs.k8s.io/core:/stable:/v1.37/deb  Packages
+   kubeadm | 1.37.0-1.1 | https://pkgs.k8s.io/core:/stable:/v1.37/deb  Packages
+pkg 1.37.0-1.1
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart virtlockd.service
+ systemctl restart virtlogd.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+kubelet set on hold.
+kubeadm set on hold.
+kubectl set on hold.
+v1.37.0

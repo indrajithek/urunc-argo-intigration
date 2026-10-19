@@ -1,0 +1,19 @@
+Created symlink /etc/systemd/system/multi-user.target.wants/buildkitd.service → /etc/systemd/system/buildkitd.service.
+buildctl github.com/moby/buildkit v0.33.0 dddd5621af04ea57823085c93a063383f71d3173
+nerdctl version 2.4.0
+ID				PLATFORMS
+qgy4uw8551bqqlptyrgk8azfa	linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386
+harbor.nbfc.io/nubificus/urunc/readfile-qemu-linux-raw@sha256:6a898c40a681bc81bddcd9abdbf49b39ef91ad3991bc0419aff7c049ad10ea59
+{
+  "com.urunc.unikernel.binary": "/.boot/kernel",
+  "com.urunc.unikernel.cmdline": "/readfile",
+  "com.urunc.unikernel.hypervisor": "qemu",
+  "com.urunc.unikernel.mountRootfs": "true",
+  "com.urunc.unikernel.unikernelType": "linux"
+}
+[
+  "/readfile"
+]
+[
+  "/urunit"
+]

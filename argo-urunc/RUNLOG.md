@@ -1,0 +1,13 @@
+# RUNLOG 2026-09-29T19:55:24Z
+- 01 host prep (modules, sysctl, swap off) + runc 1.5.1, containerd 2.4.0, CNI 1.9.1, crictl 1.37.0 -> logs/setup/01-host.log
+- 02 kubeadm/kubelet/kubectl 1.37.0-1.1 (held) -> logs/setup/02-k8s.log
+- 03 kubeadm init, untaint, flannel 0.28.9 --iface=enp1s0 -> logs/setup/03-kubeadm-init.log
+- 04 urunc 0.8.0 + shim (sha256 ok), monitors bundle QEMU 10.1.1 / virtiofsd 1.13.0 -> /opt/urunc; /etc/urunc/config.toml; RuntimeClass urunc -> logs/setup/04-urunc.log
+- 05 buildkit 0.33.0 (containerd worker, ns k8s.io), nerdctl 2.4.0; kernel 6.12.36 from readfile-qemu-linux-raw@sha256:6a898c40a681... -> logs/setup/05-buildtools.log
+- 06 bunny image docker.io/urunc-argo/python-linux-qemu:135 -> logs/setup/06-image-build.log
+- smoke pod: Completed exit 0, printed 42 over virtiofs
+- 07 argo 4.1.4 + executor RBAC -> logs/setup/07-argo.log
+- snap.sh adapted (scripts/snap.sh), dry run OK
+- manifests/experiment.yaml: original script, image swapped, podSpecPatch runtimeClassName urunc + enableServiceLinks false
+- submitted experiment-gnxvr at 2026-09-29 20:16:44 UTC
+- result: experiment-gnxvr Error at 20:20:06 (3m20s); wait exit 64 no route to host; ctr/main/exitcode=64; main CRI exit 0; snaps running + final

@@ -1,0 +1,17 @@
+[log]
+level = "debug"
+syslog = true
+
+[timestamps]
+enabled = true
+destination = "/var/log/urunc/timestamps.log"
+
+[monitors.qemu]
+default_memory_mb = 1024
+default_vcpus = 1
+path = "/opt/urunc/bin/qemu-system-x86_64"
+data_path = "/opt/urunc/share/qemu"
+
+[extra_binaries.virtiofsd]
+path = "/opt/urunc/bin/virtiofsd"
+options = "--sandbox none --cache never --log-level debug"

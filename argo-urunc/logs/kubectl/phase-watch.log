@@ -1,0 +1,5 @@
+20:18:29 +105s wf=Running pod=1/2 NotReady
+20:18:59 +135s wf=Running pod=1/2 NotReady
+20:19:29 +165s wf=Running pod=1/2 NotReady
+20:19:59 +195s wf=Running pod=0/2 Error
+20:20:29 +225s wf=Error pod=0/2 Error

@@ -1,0 +1,13 @@
+#syntax=harbor.nbfc.io/nubificus/bunny:latest
+version: v0.1
+platforms:
+  framework: linux
+  monitor: qemu
+  architecture: x86
+rootfs:
+  from: python:alpine3.23
+  type: raw
+kernel:
+  from: local
+  path: kernel
+cmdline: "/usr/local/bin/python"
